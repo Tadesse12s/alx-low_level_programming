@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * this is task 2
- * this contain all code
- */
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
-	char l;
+	char low;
 
-	for (l = a ; a <= z ; l++)
-	{
-		putchar ("%d", " \n" : l);
-	}
+	for (low = 'a'; low <= 'z'; low++)
+	putchar(low);
+	printf("\n");
 	return (0);
 }
