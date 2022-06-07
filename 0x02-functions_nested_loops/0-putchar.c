@@ -3,4 +3,5 @@ int main
 {
 	printf(_putchar);
 	putchar('\n');
+	return 0;
 }
