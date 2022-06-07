@@ -1,7 +1,5 @@
-#include "main.h"
-
-/**
- * main - check the code
+#include "holberton.h"
+/** check the code
  * Return: Always 0.
  */
 int main(void)
