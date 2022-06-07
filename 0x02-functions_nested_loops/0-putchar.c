@@ -1,7 +1,16 @@
-#include <stdio.h>
-int main
+#include "main.h"
+/**
+ * return: always 0 (success)
+ */
+int main(void)
 {
-	printf('_putchar');
-	putchar('\n');
-	return (0);
+	char t[] = "_putchar";
+		int i = 0;
+
+		for (i=0 ; i<=8 ; i++)
+		{
+		_putchar(t[i]);
+		}
+		_putchar('\n');
+		return (0);
 }
