@@ -1,17 +1,19 @@
-#include <stdio.h>
-/**
- * check the code
- * Return: Always 0.
- */
-int main(void)
-{
-	char t;
+#include "main.h"
 
-	while (t <= 'z')
+/**
+ * print_alphabet - Entry point
+ * Return:0
+ */
+
+void print_alphabet(void)
+{
+	char c = 'a';
+
+	while (c <= 'z')
 	{
-		putchar(t);
-		putchar('\n');
-		t++;
+	_putchar(c);
+	c++;
 	}
-	return (0);
+	_putchar('\n');
+
 }
