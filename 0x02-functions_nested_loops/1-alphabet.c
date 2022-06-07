@@ -1,15 +1,17 @@
-#include "holberton.h"
-/** check the code
+#include <stdio.h>
+/**
+ * check the code
  * Return: Always 0.
  */
 int main(void)
 {
 	char t;
 
-	for (t = 'a'; t <= 'z')
+	while (t <= 'z')
 	{
-		_putchar(t);
-		_putchar('\n');
+		putchar(t);
+		putchar('\n');
+		t++;
 	}
 	return (0);
 }
