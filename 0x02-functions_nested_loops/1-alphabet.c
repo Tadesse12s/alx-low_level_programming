@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+#include <main.h>
 
 /**
  * print_alphabet - print Holberton
@@ -15,5 +16,5 @@ void print_alphabet(void)
 	_putchar(i);
 	}
 	_putchar('\n');
-
+	return (0);
 }
