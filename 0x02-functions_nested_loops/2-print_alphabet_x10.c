@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include <stdio.h>
 /**
- * print_alphabet_x10 - prints alphabet 10 times
- * Return:void
+ * main - check the code.
+ *
+ * Return: Always 0.
  */
-
 void print_alphabet_x10(void)
 {
 	char c;
@@ -11,14 +11,15 @@ void print_alphabet_x10(void)
 
 	while (i < 10)
 	{
-	c = 'a';
+		c = 'a';
 	while (c <= 'z')
 	{
-	_putchar(c);
-	c++;
+		_putchar(c);
+		c++;
 	}
-	_putchar('\n');
-	i++;
+		_putchar('\n');
+		i++;
 	}
 
+	return (0);
 }
