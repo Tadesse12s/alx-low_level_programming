@@ -1,17 +1,10 @@
 #include "main.h"
-
 /**
- * _isdigit - Checks for numbers
- *
- * @c: character to checked
- *
- * Return: 1 OR 0
+ * _isdigit - Entry Point
+ * @c : the checked character
+ * Return:1 0r 0
  */
-
 int _isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
-		return (0);
+	return (((c > 47 && c < 58)) ? 1 : 0);
 }
