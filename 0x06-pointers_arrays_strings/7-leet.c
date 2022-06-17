@@ -1,21 +1,30 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - check the code for
- * Return: Always 0.
+ * leet - encodes a string into 1337.
+ * @s: pointer input string.
+ * Return: string.
  */
-
-int main(void)
-
+char *leet(char *s)
 {
-char s[] = "Expect the best. Prepare for the worst.Capitalize on what comes.";
-	char *p;
+	int lowerCase[] = {97, 101, 111, 116, 108};
+	int upperCase[] = {65, 69, 79, 84, 76};
+	int replace[] = {52, 51, 48, 55, 49};
+	int z;
+	int w;
 
-	p = leet(s);
+	for (z = 0; s[z] != '\0'; z++)
+	{
+		w = 0;
 
-	printf("%s", p);
-	printf("%s", s);
-
-	return (0);
-
+		while (w < 5)
+		{
+		if (s[z] == lowerCase[w] || s[z] == upperCase[w])
+		{
+			s[z] = replace[w];
+			break;
+		}
+		w++;
+		}
+	}
+	return (s);
 }
